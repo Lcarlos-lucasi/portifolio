@@ -188,13 +188,18 @@ main{
     text-shadow: 0.8px 0.8px white;
 }
 
+.academic__curso__item{
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
 .instituicao-link{
     color: #000;
 }
 
 .skills{
     margin-left: 1rem;
-    height: 70vh; 
+    height: 80vh; 
 
 }
 
