@@ -1,0 +1,335 @@
+/*CSS Reset / Normalize*/
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+:root{
+    /*Insira a variavel das outras cores inspecionando o modelo do figma*/
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+   /*--cor-de-fundo: #F5F5F5;*/
+   --cor-de-fundo: #a2b4c9;
+   --cor-de-link: rgb(214, 193, 193);
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo) ;
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    
+    
+}
+ol, ul,li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+
+
+
+
+/*Neste desafio, gostariamos que praticassem a metodologia BEM, caso seintam a vontade 
+de utiliza-la. 
+Mas o que é o BEM?
+BEM (Block, Element, Modifier) ​​é uma abordagem baseada em componentes para o desenvolvimento
+web. A ideia por trás disso é dividir a interface do usuário em blocos independentes.
+Isso torna o desenvolvimento de interface fácil e rápido, mesmo com uma interface
+de usuário complexa, e permite a reutilização de código existente sem copiar e colar.
+Link da documentação oficial!
+https://en.bem.info/methodology/quick-start/*/
+
+/*Sessão Menu*/
+
+.menu{
+    position:fixed;
+    top: 0;
+    background: var(--cor-de-fundo);
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;  
+   
+}
+
+
+header {
+
+    display: block;
+    margin-right: 0.5rem;    
+    
+}
+
+.menu__list{
+    display: flex;
+   
+}
+
+.menu__list__item{
+    margin-left: 0.5rem;
+    
+
+}
+
+.menu__list__link{
+    color: blue;
+}
+
+main{
+    margin-top: 15vh;
+      
+}
+
+.title__profile{
+    height: 70px;
+    width: 70px;
+    border-radius: 100%;
+    margin-left: 0.2rem;
+    margin-top: 0.2rem;
+
+}
+
+
+.apresentacao{
+     margin-left: 1.5rem;
+     margin-right: 1.5rem;
+     margin: 1rem 1.5rem 2rem 1.5rem;
+     text-align: justify;
+     color: black;
+     
+
+}
+
+.experiencias__menu{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /*margin-bottom: 3rem;*/
+    
+}
+
+
+.experiencia{
+    width: 145px;
+    height: 145px;
+    margin-bottom: 1.3rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: blue;
+    text-shadow: 1.5px 1.5px #000;
+    /*text-justify: auto;*/
+    
+}   
+
+
+
+
+#exp__engenharia{
+    background-image: url("../assets/img/engenharia-mecanica.jpg");
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+}
+
+.experience__title{
+    font-size:large;
+    text-shadow: 0.8px 0.8px white;
+    
+}
+
+#exp__dev{
+    background-image: url("../assets/img/engenharia-de-software1.jpg");
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+}
+
+#exp__edu{
+    background-image: url("../assets/img/educacao.jpg");
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+}
+
+#exp__skill{
+    background-image: url("../assets/img/img-skills.png");
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+
+}
+
+
+
+/* Engenharia Mecânica*/
+
+.eng__experience, .dev__experience, .academic{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;     
+
+}
+
+.espaco-cabecalho{
+    height: 10vh;
+}
+
+.atividade{
+
+    text-decoration:solid;
+
+}
+
+.eng__experience__title, .dev__experience__title, .academic__title, .skills__title{
+    text-shadow: 0.8px 0.8px white;
+}
+
+.instituicao-link{
+    color: #000;
+}
+
+.skills{
+    margin-left: 1rem;
+    height: 70vh; 
+
+}
+
+.skills__line{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.skills__img{
+    width: 40px;
+    height: 40px;
+    
+}
+
+.Contato{
+    display:flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-bottom: 60vh;
+}
+
+.cotato__item{
+    color: #000;
+    margin: 0.5rem 0 0.5rem 1rem;
+}
+
+
+footer{
+    
+    position:fixed;
+    background: var(--cor-de-fundo);
+    width: 100%;
+    height: 9vh;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    /*flex-wrap: wrap;*/
+    font-size: 1rem;
+    line-height: 1.5rem;
+    justify-content: space-evenly;
+    align-items: center;
+    
+
+}
+
+.icones{
+    width: 35px;
+    height: 35px;
+    margin: .3rem 0 .3rem 0.5rem;
+   
+    
+}
+
+.item__footer{
+    align-items:center;
+    font-size: 1rem;
+    color:#000;
+    font-weight: bold;
+
+}
+
+
+
+
+/*Sessão Title*/
+
+
+
+/*Sessão About*/
+
+/*Sessão Hobbies*/
+
+
+
+/* Experiência Acadêmica*/
+
+
+
+
+
+/*Contato*/
+
+
+
+/*footeer*/
+
+
+
+/* Chegou a hora de se desafiar com a responsividade, 
+utilize como referência os breakpoints @media abaixo*/
+
+/*Tablet*/
+@media (min-width: 768px) {
+
+/* Menu */
+
+
+
+
+
+/*title*/
+
+/*Skills*/
+
+/*Hobbies*/
+
+/*Experiências acadêmicas*/
+
+/*Expeirência profissional*/
+
+}
+
+/*Mobile*/
+@media (min-width: 425px) {
+
+/*Menu*/
+
+    
+
+/*Titulo*/
+
+/*Sessão sobre*/
+
+/*Skills*/
+
+/*Hobbies*/
+ 
+/*Formação Acadêmica*/
+
+/*Experiência Profissional*/
+
+ /*Contato*/
+
+/*Footer*/
+
+}
