@@ -6,8 +6,9 @@ coloque nas sessões indicadas*/
     /*Insira a variavel das outras cores inspecionando o modelo do figma*/
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
    /*--cor-de-fundo: #F5F5F5;*/
-   --cor-de-fundo: #a2b4c9;
+   --cor-de-fundo: #709aca;
    --cor-de-link: rgb(214, 193, 193);
+   padding: 0%;
 }
 
 body {
@@ -65,12 +66,12 @@ header {
 
 .menu__list{
     display: flex;
-    margin-left: 1.5rem;
+    padding-left: 0%;
    
 }
 
 .menu__list__item{
-    margin-left: 0.2rem;
+    margin-left: 0.3rem;
     
 
 }
@@ -130,7 +131,7 @@ main{
 
 
 #exp__engenharia{
-    background-image: url("../assets/img/engenharia-mecanica.jpg");
+    background-image: url("../assets/img/eperiencia.png");
     background-repeat: none;
     background-position: center;
     background-size: cover;
@@ -143,21 +144,21 @@ main{
 }
 
 #exp__dev{
-    background-image: url("../assets/img/engenharia-de-software1.jpg");
+    background-image: url("../assets/img/dev.png");
     background-repeat: none;
     background-position: center;
     background-size: cover;
 }
 
 #exp__edu{
-    background-image: url("../assets/img/educacao.jpg");
+    background-image: url("../assets/img/formacao.png");
     background-repeat: none;
     background-position: center;
     background-size: cover;
 }
 
 #exp__skill{
-    background-image: url("../assets/img/img-skills.png");
+    background-image: url("../assets/img/skills.png");
     background-repeat: none;
     background-position: center;
     background-size: cover;
@@ -199,21 +200,43 @@ main{
 }
 
 .skills{
-    margin-left: 1rem;
-    height: 80vh; 
+    
+    height: 80vh;
+    width: 100%;
+    
+}
 
+.skills__title{
+    margin-left: 1rem;
 }
 
 .skills__line{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-evenly;   
+
     
+}
+.skills__box{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    vertical-align: center;
+    
+}
+
+.skills__box__ul{
+    width: 75px;
+    height: 75px;
+    padding: 0;
+    margin: auto;
 }
 
 .skills__img{
     width: 40px;
     height: 40px;
+    margin:auto;
     
 }
 
