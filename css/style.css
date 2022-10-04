@@ -29,6 +29,15 @@ a{
     color: var(--cor-de-link);
 }
 
+h4{
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+ul{
+    padding-inline-start: 10px;
+}
+
 
 
 
@@ -50,14 +59,14 @@ https://en.bem.info/methodology/quick-start/*/
     top: 0;
     background: var(--cor-de-fundo);
     width: 100%;
-    height: 12vh;
+    height: 14vh;
     display: flex;
     justify-content: space-between;  
    
 }
 
 
-header {
+header {f
 
     display: block;
     margin-right: 0.5rem;    
@@ -67,13 +76,13 @@ header {
 .menu__list{
     display: flex;
     padding-left: 0%;
+    font-weight: bold;
    
 }
 
 .menu__list__item{
     margin-left: 0.3rem;
     
-
 }
 
 .menu__list__link{
@@ -94,8 +103,14 @@ main{
 
 }
 
+.introducao{
+    display: flex;
+    flex-wrap: wrap;
+
+}
 
 .apresentacao{
+    
      margin-left: 1.5rem;
      margin-right: 1.5rem;
      margin: 1rem 1.5rem 2rem 1.5rem;
@@ -107,10 +122,11 @@ main{
 
 .experiencias__menu{
     width: 100%;
+    height: 60vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    /*margin-bottom: 3rem;*/
+    
     
 }
 
@@ -177,7 +193,7 @@ main{
 }
 
 .espaco-cabecalho{
-    height: 10vh;
+    height: 14vh;
 }
 
 .atividade{
@@ -189,6 +205,73 @@ main{
 .eng__experience__title, .dev__experience__title, .academic__title, .skills__title{
     text-shadow: 0.8px 0.8px white;
 }
+
+.experience__info{
+    display: flex;
+
+}
+
+
+
+.experience__imagem{
+
+    display: none;
+    width: 24rem;
+    height: 18rem;
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+    padding: 1rem;
+    margin: auto;
+
+}
+
+#arproject{
+    background-image: url("../assets/img/Fiocruz-Recife.jpg");
+}
+
+#white-martins{
+    background-image: url("../assets/img/WhiteMartins-ZPECeara.jpeg");
+    
+}
+
+#votorantim{
+    background-image: url("../assets/img/poty-paulista.jpg");
+    
+}
+
+#celite{
+    background-image: url("../assets/img/celite.jpg");
+}
+
+#civ{
+    background-image: url("../assets/img/maquina-is.jpg");
+}
+
+
+.experiencie__box{
+    width: 90%;
+}
+
+.dev__experience{
+    width: 100%;
+
+}
+
+.experience__img--dev{
+    border: solid #000 0.1rem;
+    border-radius: 5px;
+    justify-content:space-evenly;
+}
+
+.img__dev{
+   text-align: center;
+}
+
+.academic{
+    width: 90%;
+}
+
 
 .academic__curso__item{
     margin-bottom: 0;
@@ -244,7 +327,7 @@ main{
     display:flex;
     flex-direction: column;
     margin-left: 1rem;
-    margin-bottom: 60vh;
+    margin-bottom: 36vh;
 }
 
 .cotato__item{
@@ -314,32 +397,135 @@ footer{
 
 
 
-/* Chegou a hora de se desafiar com a responsividade, 
-utilize como referência os breakpoints @media abaixo*/
+/* responsividade*/
 
-/*Tablet*/
-@media (min-width: 768px) {
+@media screen and (min-width: 425px){
+    
+      
+    
+    
+    .experiencias__menu{
+        width: 400px;  
+        
+    }
 
-/* Menu */
+    footer{
+     
+        justify-content: space-between;
+        
+    }
+
+    .copyright{
+        margin-right: 1rem;
+
+    }
 
 
-
-
-
-/*title*/
-
-/*Skills*/
-
-/*Hobbies*/
-
-/*Experiências acadêmicas*/
-
-/*Expeirência profissional*/
 
 }
 
-/*Mobile*/
-@media (min-width: 425px) {
+
+
+
+
+/*Tablet*/
+@media screen and (min-width: 768px){
+
+
+
+    
+
+    
+    .introducao{
+        display: block
+    
+    }
+
+    
+    .apresentacao{
+        width: 40%;
+        
+    }
+
+    .menu__icon{
+        width: 100%;
+        height: 70vh;
+        
+    }
+    
+
+    .experiencias__menu{
+        width: 700px;
+        
+        margin: auto;
+        align-items: center;
+        
+    }
+
+    .experiencie__box{
+        
+    }
+    .experience__info{
+        display: flex;
+        
+    }
+
+    .experience__conteudo{
+        width: 50%;
+    }
+
+    .experience__imagem{
+        display: block;
+    }
+
+    .experiencie__box--dev{
+        display: flex;
+
+    }
+    .experience__info--dev{
+        width: 50%;
+    }
+
+    .img__dev{
+        width: 50%;
+
+    }
+    
+    
+
+
+
+
+    
+
+
+
+
+
+
+
+}
+
+
+/*Desktop*/
+@media screen and (min-width: 1024px){
+
+    .experiencie__box--dev{
+        display:flex;
+        padding: 1rem;
+          
+    }
+    
+
+    .Contato{
+    
+        margin-bottom: 48vh;
+    }
+
+
+
+}
+
 
 /*Menu*/
 
@@ -361,4 +547,3 @@ utilize como referência os breakpoints @media abaixo*/
 
 /*Footer*/
 
-}
